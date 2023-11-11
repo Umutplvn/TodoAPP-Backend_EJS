@@ -25,7 +25,7 @@ app.set('views', './public')    // EJS icin konum tanimlama
 app.use(express.json())
 
 // Accept form data & convert to object:
-app.use(express.urlencoded({ extended: true })) // Allow array-form-elements - Template sayesinde browser uzerinden yolladigimiz veriyi kabul etmeye yarar
+app.use(express.urlencoded({ extended: true })) // Allow array-form-elements - Template sayesinde browser uzerinden yolladigimiz veriyi kabul etmeye yarar / forma yazdigimiz verileri urlye saklayarak yollar 
 
 // Router:
 app.all('/', (req, res) => {
